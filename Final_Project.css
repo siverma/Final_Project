@@ -1,0 +1,84 @@
+
+h1{
+    font-family: "Georgia";
+    font-style: normal;
+    font-size: 3.0rem;
+    line-height: 1.12;
+    letter-spacing: -0.9px;
+    margin-bottom: .5em;
+    margin-top: 0;
+    color: #222;
+    text-align: center;
+}
+
+p { 
+text-align: center;
+font-family: "Georgia"
+font-size: 3.0rem;
+}
+
+#toHelp{
+    margin-top: 100px;
+    font-family: gandhi_serifregular,"Georgia",Times New Roman,serif;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 1.12;
+    letter-spacing: -0.9px;
+    margin-bottom: .5em;
+    margin-top: 0;
+    color: #222;
+    text-align: center;
+}
+
+#footer{
+    background: rgb(241, 241, 241);
+    border-top: 1px solid rgb(222, 222, 222);
+    margin-top: -2px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    margin-left: 85px; 
+    margin-right: 85px;
+    margin-bottom: 25px;
+  }
+
+.foot-links a, .foot-links p{
+    display: block;
+    color: rgb(63, 63, 63);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: OpenSansRegular, Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(63, 63, 63);
+    padding-bottom: 5px;
+    text-shadow: rgb(255, 255, 255) 1px 1px 0px;
+  }
+
+svg {
+    font-family: Helvetica, Arial, sans-serif;
+    }
+
+.axis path,
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+    
+.tick line{
+    opacity: 0.1;
+}
+
+</body>
+</style>

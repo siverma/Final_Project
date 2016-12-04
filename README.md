@@ -1,2 +1,1 @@
-# Final_Project
-Final Project CMPS165
+Final_Project
