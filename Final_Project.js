@@ -96,7 +96,15 @@ d3.csv("China_India_Data.csv", function(error, data) {
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
       .style("fill", "none")
-      .style("stroke", function(d) { return color(d.name); });
+        var path = SeriesLine.append("path")
+      .attr("class", "line")
+      .attr("d", function(d) { return line(d.values); })
+      .style("fill", "none")
+      .style("stroke", function(d) 
+             {if (d.name != ("India: Urban" || "China: Urban")){return color(d.name)} 
+                  else{
+                    return "purple"
+                  }});
     
     var totalLength = path.node().getTotalLength();
     
