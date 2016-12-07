@@ -1,4 +1,4 @@
-var margin = {top: 25, right: 150, bottom: 40, left: 5},
+var margin = {top: 20, right: 150, bottom: 40, left: 10},
     width = 1000 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
 
@@ -8,7 +8,6 @@ var x = d3.time.scale()
 var y = d3.scale.linear()
     .domain([0,2e6])
     .range([height, 0]);
-
 
 var color = d3.scale.category10();
 
@@ -96,10 +95,6 @@ d3.csv("China_India_Data.csv", function(error, data) {
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
       .style("fill", "none")
-        var path = SeriesLine.append("path")
-      .attr("class", "line")
-      .attr("d", function(d) { return line(d.values); })
-      .style("fill", "none")
       .style("stroke", function(d) 
              {if (d.name != ("India: Urban" || "China: Urban")){return color(d.name)} 
                   else{
@@ -118,7 +113,7 @@ d3.csv("China_India_Data.csv", function(error, data) {
     SeriesLine.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.population) + ")"; })
-      .attr("x", 3)
+      .attr("dx", ".5em")
       .attr("dy", ".3em")
       .text(function(d) { return d.name; });
 
